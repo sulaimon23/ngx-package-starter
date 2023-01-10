@@ -1,6 +1,6 @@
 {
-    "name": "@sulaimon23/ngx-package-deploy",
-    "version": "1.0.0",
+    "name": "@sulaimon23/ngx-package-starter",
+    "version": "1.0.2",
     "description": "An Angular library NPM starter (or example) project to ease setup of Angular libraries as NPM packages from your GitHub repo",
     "scripts": {
         "clean": "rm -rf ./dist",
