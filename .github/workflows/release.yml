@@ -37,11 +37,11 @@ jobs:
             # Redundant cos tests workflow has already been run
             # - name: Test
             #   run: npm run test:unit --if-present bbrz:5#F$+MYRLi
+            # echo registry=https://registry.npmjs.org/ > .npmrc
             - name: Build
               run: npm run build
             - name: Create .npmrc file
               run: |
-                  echo registry=https://registry.npmjs.org/ > .npmrc
                   echo @sulaimon23:registry=https://npm.pkg.github.com/ > .npmrc
                   echo '//npm.pkg.github.com/:_authToken=${{ secrets.GH_TOKEN  }}' >> .npmrc
             - name: Release
