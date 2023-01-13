@@ -42,7 +42,7 @@ jobs:
             # - name: Test
             # echo registry=https://registry.npmjs.org/ > .npmrc
             - name: Build
-              run: npm run build
+              run: npm run build design-system
             - name: Create .npmrc file
               run: |
                   echo registry=https://registry.npmjs.org/ > .npmrc
