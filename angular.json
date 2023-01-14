@@ -131,15 +131,23 @@
         }
       }
     },
+<<<<<<< HEAD
     "button": {
       "projectType": "library",
       "root": "projects/button",
       "sourceRoot": "projects/button/src",
+=======
+    "ngx-button": {
+      "projectType": "library",
+      "root": "projects/ngx-button",
+      "sourceRoot": "projects/ngx-button/src",
+>>>>>>> 01be478c1ac63850b8bd21e77aade76134d60281
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
+<<<<<<< HEAD
             "project": "projects/button/ng-package.json"
           },
           "configurations": {
@@ -148,6 +156,16 @@
             },
             "development": {
               "tsConfig": "projects/button/tsconfig.lib.json"
+=======
+            "project": "projects/ngx-button/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-button/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-button/tsconfig.lib.json"
+>>>>>>> 01be478c1ac63850b8bd21e77aade76134d60281
             }
           },
           "defaultConfiguration": "production"
@@ -155,7 +173,11 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
+<<<<<<< HEAD
             "tsConfig": "projects/button/tsconfig.spec.json",
+=======
+            "tsConfig": "projects/ngx-button/tsconfig.spec.json",
+>>>>>>> 01be478c1ac63850b8bd21e77aade76134d60281
             "polyfills": [
               "zone.js",
               "zone.js/testing"

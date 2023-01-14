@@ -12,8 +12,13 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "paths": {
+<<<<<<< HEAD
       "button": [
         "dist/button"
+=======
+      "ngx-button": [
+        "dist/ngx-button"
+>>>>>>> 01be478c1ac63850b8bd21e77aade76134d60281
       ],
       "ngx-lib": [
         "dist/ngx-lib/ngx-lib",
