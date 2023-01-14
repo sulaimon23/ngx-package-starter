@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { SharedModule } from 'projects/design-system/src/app/shared.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DesignLibModule } from "design-lib"
 
+// 
+// 
 @NgModule({
     declarations: [
         AppComponent
@@ -12,7 +14,7 @@ import { AppComponent } from './app.component';
     imports: [
         BrowserModule,
         AppRoutingModule,
-        SharedModule
+        DesignLibModule
     ],
     providers: [],
     bootstrap: [AppComponent]

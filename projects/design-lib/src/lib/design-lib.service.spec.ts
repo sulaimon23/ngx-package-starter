@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { NgxLibService } from './ngx-lib.service';
+import { DesignLibService } from './design-lib.service';
 
-describe('NgxLibService', () => {
-  let service: NgxLibService;
+describe('DesignLibService', () => {
+  let service: DesignLibService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(NgxLibService);
+    service = TestBed.inject(DesignLibService);
   });
 
   it('should be created', () => {

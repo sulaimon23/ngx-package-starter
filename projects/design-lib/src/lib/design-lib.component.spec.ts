@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgxButtonComponent } from './ngx-button.component';
+import { DesignLibComponent } from './design-lib.component';
 
-describe('NgxButtonComponent', () => {
-  let component: NgxButtonComponent;
-  let fixture: ComponentFixture<NgxButtonComponent>;
+describe('DesignLibComponent', () => {
+  let component: DesignLibComponent;
+  let fixture: ComponentFixture<DesignLibComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NgxButtonComponent ]
+      declarations: [ DesignLibComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(NgxButtonComponent);
+    fixture = TestBed.createComponent(DesignLibComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
