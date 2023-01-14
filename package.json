@@ -1,5 +1,5 @@
 {
-    "name": "@sulaimon23",
+    "name": "sulaimon23-lib",
     "version": "1.12.0",
     "description": "An Angular library NPM starter (or example) project to ease setup of Angular libraries as NPM packages from your GitHub repo",
     "scripts": {
@@ -30,9 +30,6 @@
         "registry": "https://npm.pkg.github.com/",
         "access": "public"
     },
-    "files": [
-        "dist/**/*"
-    ],
     "dependencies": {
         "@angular/animations": "^15.0.4",
         "@angular/cdk": "^15.0.3",
