@@ -30,6 +30,9 @@
         "registry": "https://npm.pkg.github.com/",
         "access": "public"
     },
+    "files": [
+        "dist/**/*"
+    ],
     "dependencies": {
         "@angular/animations": "^15.0.4",
         "@angular/cdk": "^15.0.3",

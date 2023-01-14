@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lib-design-lib',
-  template: `
+    selector: 'lib-design-lib',
+    template: `
     <p>
-      design-lib works!
+      design-lib also works!
     </p>
   `,
-  styles: [
-  ]
+    styles: [
+    ]
 })
 export class DesignLibComponent {
 
