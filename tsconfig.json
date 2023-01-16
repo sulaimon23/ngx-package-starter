@@ -12,11 +12,7 @@
         "noFallthroughCasesInSwitch": true,
         "sourceMap": true,
         "paths": {
-          "design-lib": [
-            "dist/design-lib"
-          ],
-            "ngx-button": ["dist/ngx-button"],
-            "ngx-lib": ["dist/ngx-lib/ngx-lib", "dist/ngx-lib"]
+            "design-lib": ["dist/design-lib"]
         },
         "declaration": false,
         "downlevelIteration": true,
