@@ -3,7 +3,7 @@
     "compileOnSave": false,
     "compilerOptions": {
         "baseUrl": "./",
-        "outDir": "./dist/out-tsc",
+        "outDir": "./design-lib/out-tsc",
         "forceConsistentCasingInFileNames": true,
         "strict": true,
         "noImplicitOverride": true,
@@ -12,11 +12,7 @@
         "noFallthroughCasesInSwitch": true,
         "sourceMap": true,
         "paths": {
-          "design-lib": [
-            "dist/design-lib"
-          ],
-            "ngx-button": ["dist/ngx-button"],
-            "ngx-lib": ["dist/ngx-lib/ngx-lib", "dist/ngx-lib"]
+            "design-lib": ["design-lib"]
         },
         "declaration": false,
         "downlevelIteration": true,
