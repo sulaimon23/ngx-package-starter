@@ -31,7 +31,7 @@
         "access": "public"
     },
     "files": [
-        "dist/**/*"
+        "/"
     ],
     "dependencies": {
         "@angular/animations": "^15.0.4",
