@@ -14,7 +14,7 @@ import { DesignLibModule } from "design-lib"
     imports: [
         BrowserModule,
         AppRoutingModule,
-        DesignLibModule
+        DesignLibModule,
     ],
     providers: [],
     bootstrap: [AppComponent]
