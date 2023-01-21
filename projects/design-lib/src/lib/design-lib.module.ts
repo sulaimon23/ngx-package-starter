@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { DesignLibComponent } from './design-lib.component';
 import { ButtonComponent } from './button/button.component';
 import { CardHeaderDirective, CardContentDirective, CardImageDirective, CardFooterDirective } from './directives/directives.component';
+import { CardComponent } from './card/card.component';
+import { AdBannerComponent } from './ad-banner/ad-banner.component';
 
 
 
@@ -9,6 +11,8 @@ import { CardHeaderDirective, CardContentDirective, CardImageDirective, CardFoot
     declarations: [
         DesignLibComponent,
         ButtonComponent,
+        CardComponent,
+        AdBannerComponent,
     ],
     imports: [
         CardHeaderDirective,
@@ -19,8 +23,10 @@ import { CardHeaderDirective, CardContentDirective, CardImageDirective, CardFoot
     exports: [
         DesignLibComponent,
         ButtonComponent,
+        AdBannerComponent,
         CardHeaderDirective,
         CardContentDirective,
+        CardComponent,
         CardImageDirective,
         CardFooterDirective
     ]
