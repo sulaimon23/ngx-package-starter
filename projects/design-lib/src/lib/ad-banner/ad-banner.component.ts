@@ -1,4 +1,4 @@
-import { Component, QueryList, ViewChild, ViewChildren, ViewContainerRef } from '@angular/core';
+import { Component, ComponentRef, Input, QueryList, ViewChild, ViewChildren, ViewContainerRef } from '@angular/core';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -8,12 +8,17 @@ import { Observable } from 'rxjs';
 })
 export class AdBannerComponent {
 
-
+    @Input() componentArray: any
     @ViewChildren('adBanner') bannerChildren !: QueryList<any>;
     @ViewChild('container', { read: ViewContainerRef }) container!: ViewContainerRef;
 
+
+    constructor() {
+    }
+
     ngOnInit(): void {
         // this.callObservable()
+        console.log(typeof this.componentArray[0])
     }
 
     callObservable() {
@@ -43,7 +48,7 @@ export class AdBannerComponent {
 
     createComponent() {
         // this.container.clear()
-        // this.container.createComponent(WidgetTwoComponent)
+        this.container.createComponent(this.componentArray[0])
         // Array.from(this.container.element.nativeElement.children).forEach((element: any) => {
         //     element.removeAttribute("adBanner");
         //     setTimeout(() => {

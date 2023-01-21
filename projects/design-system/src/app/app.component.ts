@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, QueryList, ComponentRef } from '@angular/core';
+import { WidgetOneComponent } from './widget-one/widget-one.component';
+import { WidgetTwoComponent } from './widget-two/widget-two.component';
 
 @Component({
     selector: 'app-root',
@@ -7,5 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     title = 'design-system';
-
+    component: any = [
+        WidgetTwoComponent,
+        WidgetOneComponent
+    ]
 }
