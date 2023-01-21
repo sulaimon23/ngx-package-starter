@@ -10,7 +10,7 @@ import { WidgetTwoComponent } from './widget-two/widget-two.component';
 export class AppComponent {
     title = 'design-system';
     component: any = [
-        WidgetTwoComponent,
-        WidgetOneComponent
+        WidgetOneComponent,
+        WidgetTwoComponent
     ]
 }
