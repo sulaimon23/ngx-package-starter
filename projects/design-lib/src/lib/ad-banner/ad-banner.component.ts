@@ -50,5 +50,6 @@ export class AdBannerComponent {
         //         console.log(this.container.element.nativeElement.children)
         //     }, 100);
         // })
+        // 
     }
 }
