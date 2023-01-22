@@ -1,6 +1,9 @@
 @import './variables';
 @import './mixins';
 
+* {
+    box-sizing: border-box;
+}
 
 .border-red {
     @include border-red

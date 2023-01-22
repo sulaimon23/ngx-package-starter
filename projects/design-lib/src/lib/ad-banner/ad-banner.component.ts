@@ -1,36 +1,54 @@
-import { Component, Input, QueryList, ViewChild, ViewChildren, ViewContainerRef } from '@angular/core';
+import { Component, Input, ViewChild, ViewContainerRef, ViewEncapsulation } from '@angular/core';
 import { interval, Subscription } from 'rxjs';
+import { ComponentType } from '@angular/cdk/overlay';
 
 @Component({
     selector: 'lib-ad-banner',
     templateUrl: './ad-banner.component.html',
-    styleUrls: ['./ad-banner.component.scss']
+    styleUrls: ['./ad-banner.component.scss'],
+    encapsulation: ViewEncapsulation.None
 })
 export class AdBannerComponent {
 
-    @Input() componentArray: any
-    @Input() interval: number = 2000
-    @ViewChildren('adBanner') bannerChildren !: QueryList<any>;
+    @Input() loop: boolean = true;
+    @Input()
+    componentArray: ComponentType<{}>[] = [];
+    @Input() delay?: number;
+    @Input() interval: number = 1000;
     @ViewChild('container', { read: ViewContainerRef }) container!: ViewContainerRef;
 
-
+    subscription !: Subscription
 
     ngOnInit(): void {
         this.callObservable()
     }
 
-    callObservable() {
-        const observable = interval(this.interval);
-        const subscription: Subscription = observable.subscribe(componentIndex => this.createComponent(componentIndex, subscription))
+    ngAfterViewInit(): void {
+        this.container.createComponent(this.componentArray[0])
     }
 
-    createComponent(componentIndex: number, subscription: Subscription) {
-        console.log(componentIndex)
+    callObservable() {
+        const observable = interval(this.interval);
+        this.subscription = observable.subscribe(componentIndex => this.createComponent(componentIndex, () => {
+            if (!this.loop) return
+            if (this.delay) {
+                setTimeout(() => {
+                    this.callObservable()
+                }, this.delay);
+            } else {
+                this.callObservable()
+            }
+        }))
+    }
+
+    createComponent(componentIndex: number, _succ = () => { }) {
         this.container.clear()
         this.container.createComponent(this.componentArray[componentIndex])
         if (componentIndex === this.componentArray.length - 1) {
-            subscription.unsubscribe()
+            this.subscription.unsubscribe()
+            _succ()
             return
         }
     }
+
 }
