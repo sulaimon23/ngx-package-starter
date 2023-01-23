@@ -17,7 +17,7 @@ export class AdBannerComponent {
     @Input() interval: number = 1000;
     @ViewChild('container', { read: ViewContainerRef }) container!: ViewContainerRef;
 
-    subscription !: Subscription
+    subscription: Subscription = new Subscription();
 
     ngOnInit(): void {
         this.callObservable()
