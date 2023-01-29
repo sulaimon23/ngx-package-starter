@@ -1,56 +1,7 @@
 .card__image--fence {
     background-image: url(https://unsplash.it/800/600?image=59);
-}
-
-
-.card__image {
-    background-position: center center;
-    background-repeat: no-repeat;
+    height: 200px;
+    background-position: center;
     background-size: cover;
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
-    filter: contrast(70%);
-
-    cursor: pointer;
-    //filter: saturate(180%);
-    overflow: hidden;
-    position: relative;
-    transition: filter 0.5s cubic-bezier(.43, .41, .22, .91);
-    ;
-
-    &::before {
-        content: "";
-        display: block;
-        padding-top: 56.25%; // 16:9 aspect ratio
-    }
-
-    &:hover {
-        filter: contrast(90%);
-    }
-
-    @media(min-width: 40rem) {
-        &::before {
-            padding-top: 66.6%; // 3:2 aspect ratio
-        }
-    }
-}
-
-
-.card__title {
-    color: #696969;
-    font-size: 1.25rem;
-    font-weight: 300;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.card__text {
-    flex: 1 1 auto;
-    font-size: 0.875rem;
-    line-height: 1.5;
-    margin-bottom: 1.25rem;
-}
-
-.fixed div {
-    border: 3px blue solid;
+    background-repeat: no-repeat;
 }
