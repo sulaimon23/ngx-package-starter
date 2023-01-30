@@ -87,7 +87,7 @@
             [
                 "@semantic-release/npm",
                 {
-                    "pkgRoot": "dist/ngx-lib/"
+                    "pkgRoot": "dist/design-lib/"
                 }
             ],
             "@semantic-release/github",
