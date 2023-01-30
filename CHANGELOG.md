@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/sulaimon23/ngx-package-starter/compare/v1.17.0...v1.18.0) (2023-01-30)
+
+
+### Features
+
+* change file directory ([a8c7785](https://github.com/sulaimon23/ngx-package-starter/commit/a8c77853ac203a390a4acc8acdbf1269e42ec188))
+
 # [1.17.0](https://github.com/sulaimon23/ngx-package-starter/compare/v1.16.0...v1.17.0) (2023-01-30)
 
 
