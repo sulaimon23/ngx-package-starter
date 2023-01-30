@@ -24,7 +24,9 @@ export class AdBannerComponent {
     }
 
     ngAfterViewInit(): void {
-        this.container.createComponent(this.componentArray[0])
+        if (this.container) {
+            this.container.createComponent(this.componentArray[0])
+        }
     }
 
     callObservable() {

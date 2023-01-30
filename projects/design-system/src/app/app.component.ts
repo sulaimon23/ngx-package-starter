@@ -10,7 +10,7 @@ import { WidgetTwoComponent } from './widget-two/widget-two.component';
 })
 export class AppComponent {
     title: string = 'design-system';
-    interval: number = 1000;
+    interval: number = 5000;
     delay: number = 2000;
     component = [
         WidgetOneComponent,

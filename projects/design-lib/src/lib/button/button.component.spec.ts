@@ -18,8 +18,6 @@ describe('ButtonComponent', () => {
     });
 
     it('should create', () => {
-        // console.log(fixture.nativeElement.querySelector('[data-test="button"]'));
-        // console.log(fixture.nativeElement.querySelector('[data-test="mat"]'));
         expect(component).toBeTruthy();
     });
 });
