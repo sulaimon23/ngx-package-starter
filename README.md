@@ -7,7 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Setup
 
 1. Install the latest version of angular CLI on your machine
-2. git clone https://github.com/sulaimon23/npm-package-starter
+2. git clone https://github.com/sulaimon23/ngx-package-starter.git
 3. npm install
 4. Search/replace my github handle and NPM Package name/Github repo with yours
 5. Create github/NPM/Synk tokens (See section below) and add to the secrets in your github repo
