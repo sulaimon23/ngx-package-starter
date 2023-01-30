@@ -14,10 +14,12 @@ describe('AdBannerComponent', () => {
 
         fixture = TestBed.createComponent(AdBannerComponent);
         component = fixture.componentInstance;
+        // fixture.componentInstance.ngAfterViewInit()
         // fixture.detectChanges();
     });
 
     it('should create', () => {
+        component.ngAfterViewInit();
         expect(component).toBeTruthy();
     });
 });
