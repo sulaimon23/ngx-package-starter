@@ -1,5 +1,5 @@
 {
-    "name": "@sulaimon23/design-lib",
+    "name": "@sulaimon23/ngx-package-starter",
     "version": "0.0.1",
     "publishConfig": {
         "registry": "https://npm.pkg.github.com/",
